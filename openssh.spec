@@ -1,12 +1,12 @@
 Summary:	OpenSSH free Secure Shell (SSH) implementation
 Name:		openssh
-Version:	6.2p1
+Version:	6.2p2
 Release:	1
 Epoch:		2
 License:	BSD
 Group:		Applications/Networking
 Source0:	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/%{name}-%{version}.tar.gz
-# Source0-md5:	7b2d9dd75b5cf267ea1737ec75500316
+# Source0-md5:	be46174dcbb77ebb4ea88ef140685de1
 Source1:	%{name}d.pamd
 Source2:	sshd@.service
 Source3:	sshd.socket
