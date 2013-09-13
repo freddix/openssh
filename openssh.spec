@@ -1,12 +1,12 @@
 Summary:	OpenSSH free Secure Shell (SSH) implementation
 Name:		openssh
-Version:	6.2p2
+Version:	6.3p1
 Release:	1
 Epoch:		2
 License:	BSD
 Group:		Applications/Networking
 Source0:	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/%{name}-%{version}.tar.gz
-# Source0-md5:	be46174dcbb77ebb4ea88ef140685de1
+# Source0-md5:	225e75c9856f76011966013163784038
 Source1:	%{name}d.pamd
 Source2:	sshd@.service
 Source3:	sshd.socket
@@ -14,10 +14,7 @@ Source4:	ssh-gen-keys.service
 Patch0:		%{name}-config.patch
 Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-pam_misc.patch
-Patch3:		%{name}-sigpipe.patch
-# http://chrootssh.sourceforge.net/download/osshChroot-3.7.1p2.diff
-Patch4:		%{name}-chroot.patch
-Patch5:		%{name}-include.patch
+Patch3:		%{name}-include.patch
 URL:		http://www.openssh.com/
 BuildRequires:	perl-base
 BuildRequires:	autoconf
@@ -78,8 +75,6 @@ your host.
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
-%patch4 -p1
-%patch5 -p1
 
 %build
 cp /usr/share/automake/config.sub .
