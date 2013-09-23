@@ -1,6 +1,6 @@
 diff -aurN openssh-6.3p1.orig/sshd_config openssh-6.3p1/sshd_config
---- openssh-6.3p1.orig/sshd_config	2013-09-13 22:39:36.174897171 +0200
-+++ openssh-6.3p1/sshd_config	2013-09-13 22:47:41.202532231 +0200
+--- openssh-6.3p1.orig/sshd_config	2013-09-23 12:52:48.518352339 +0200
++++ openssh-6.3p1/sshd_config	2013-09-23 12:54:00.187105897 +0200
 @@ -72,7 +72,7 @@
  #PermitEmptyPasswords no
  
@@ -19,12 +19,14 @@ diff -aurN openssh-6.3p1.orig/sshd_config openssh-6.3p1/sshd_config
  
  #AllowAgentForwarding yes
  #AllowTcpForwarding yes
-@@ -101,7 +101,7 @@
+@@ -101,8 +101,8 @@
  #X11Forwarding no
  #X11DisplayOffset 10
  #X11UseLocalhost yes
 -#PrintMotd yes
+-#PrintLastLog yes
 +PrintMotd no
- #PrintLastLog yes
++PrintLastLog no
  #TCPKeepAlive yes
  #UseLogin no
+ UsePrivilegeSeparation sandbox		# Default for new installations.
