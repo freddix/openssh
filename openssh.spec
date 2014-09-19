@@ -1,7 +1,8 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/openssh.git
 Summary:	OpenSSH free Secure Shell (SSH) implementation
 Name:		openssh
 Version:	6.6p1
-Release:	2
+Release:	3
 Epoch:		2
 License:	BSD
 Group:		Applications/Networking
